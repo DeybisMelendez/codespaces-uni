@@ -1,6 +1,12 @@
-# codespaces-uni
+# Plantilla de Codespace para Estudiantes de la UNI
 
-¡Bienvenidos al repositorio plantilla de Codespace diseñado especialmente para los estudiantes de la Universidad Nacional de Ingeniería (UNI)! Este repositorio tiene todo lo necesario para que los estudiantes trabajen en sus tareas de programación de manera eficiente, utilizando GitHub Codespaces como entorno de desarrollo.
+Este repositorio ha sido creado por **Deybis Melendez**, estudiante de la Universidad Nacional de Ingeniería (UNI), con el objetivo de proporcionar un entorno de desarrollo listo para que los estudiantes puedan realizar sus tareas de programación de manera rápida y eficiente utilizando GitHub Codespaces.
+
+La idea principal detrás de esta plantilla es facilitar el trabajo en las tareas de programación que forman parte del plan de estudios, eliminando la necesidad de configuraciones complicadas. Este entorno viene preconfigurado con todo lo necesario para que los estudiantes puedan enfocarse en el código y no en los detalles técnicos de la configuración.
+
+Está diseñado para cualquier estudiante que necesite trabajar con lenguajes como Python y C/C++, o que simplemente busque un entorno rápido y accesible para sus proyectos y prácticas.
+
+Si eres un estudiante de la UNI o de cualquier otra universidad y necesitas un entorno de desarrollo ágil y sin complicaciones, esta plantilla es para ti.
 
 Esta plantilla incluye lo siguiente:
 

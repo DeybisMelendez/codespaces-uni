@@ -1,0 +1,8 @@
+{
+    "C_Cpp.default.intelliSenseMode": "clang-x64",
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.default.cStandard": "c99",
+    "typescript.reportStyleChecksAsWarnings": true,
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.colorOnWhiteSpaceOnly": false,
+}

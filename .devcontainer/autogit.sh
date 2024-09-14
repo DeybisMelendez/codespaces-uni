@@ -1,4 +1,5 @@
 git pull
 git add .
-git commit -m '$(date +”%Y-%m-%d_%H-%M-%S”)'
+COMMIT = date
+git commit -m "$COMMIT"
 git push

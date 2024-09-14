@@ -5,7 +5,8 @@
         "ms-vscode.cpptools-extension-pack",
         "usernamehw.errorlens",
         "oderwat.indent-rainbow",
-        "akamud.vscode-theme-onedark"
+        "akamud.vscode-theme-onedark",
+        "emeraldwalk.runonsave"
     ],
     "dockerFile": "Dockerfile",
     "settings": {
@@ -27,6 +28,16 @@
             "rgba(255,127,255,0.3)",
             "rgba(79,236,236,0.3)"
         ],
-        "workbench.colorTheme": "Atom One Dark"
-    }
+        "workbench.colorTheme": "Atom One Dark",
+        "emeraldwalk.runonsave": {
+            "commands": [
+                {
+                    "match": ".*",
+                    "isAsync": true,
+                    "cmd": "sh .devcontainer/configure.sh && sh .devcontainer/autogit.sh"
+                }
+            ]
+        }
+    },
+    "postStartCommand": "sh .devcontainer/configure.sh && sh .devcontainer/autoupdate.sh"
 }

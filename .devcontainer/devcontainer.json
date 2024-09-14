@@ -34,10 +34,10 @@
                 {
                     "match": ".*",
                     "isAsync": true,
-                    "cmd": "sh .devcontainer/configure.sh && sh .devcontainer/autogit.sh"
+                    "cmd": "sh .devcontainer/configuregit.sh && sh .devcontainer/autogit.sh"
                 }
             ]
         }
     },
-    "postStartCommand": "sh .devcontainer/configure.sh && sh .devcontainer/autoupdate.sh"
+    "postStartCommand": "sh .devcontainer/configuregit.sh && sh .devcontainer/autoupdate.sh"
 }

@@ -1,7 +1,9 @@
 {
+    // Configuración para C/C++
     "C_Cpp.default.intelliSenseMode": "clang-x64",
     "C_Cpp.codeAnalysis.clangTidy.enabled": true,
     "C_Cpp.default.cStandard": "c99",
+    // Configuración de tema del editor
     "indentRainbow.indicatorStyle": "light",
     "indentRainbow.lightIndicatorStyleLineWidth": 2,
     "indentRainbow.colors": [
@@ -10,5 +12,10 @@
         "rgba(255,127,255,0.3)",
         "rgba(79,236,236,0.3)"
     ],
-    "workbench.colorTheme": "Atom One Dark"
+    "workbench.colorTheme": "Atom One Dark",
+    // Configuración de git
+    "git.autofetch": "all",
+    "files.exclude": {
+        "**/.devcontainer": true
+    }
 }

@@ -1,5 +1,6 @@
-git pull
-git add .
+GIT='git --git-dir='$PWD'/.git'
+$GIT pull
+$GIT add .
 COMMIT = date
-git commit -m "$COMMIT"
-git push
+$GIT commit -m "$COMMIT"
+$GIT push

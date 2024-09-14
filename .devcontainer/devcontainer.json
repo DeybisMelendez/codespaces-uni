@@ -1,0 +1,17 @@
+{
+    "name": "Plantilla de Codespaces para estudiantes UNI",
+    "extensions": [
+        "donjayamanne.python-extension-pack",
+        "ms-vscode.cpptools-extension-pack",
+        "usernamehw.errorlens",
+        "oderwat.indent-rainbow",
+        "akamud.vscode-theme-onedark"
+    ],
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "files.exclude": {
+            "**/README.md": true,
+            "**/LICENSE": true
+        }
+    }
+}

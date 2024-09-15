@@ -11,7 +11,8 @@
         "usernamehw.errorlens",
         "oderwat.indent-rainbow",
         "akamud.vscode-theme-onedark",
-        "emeraldwalk.runonsave"
+        "emeraldwalk.runonsave",
+        "gruntfuggly.todo-tree"
     ],
     "dockerFile": "Dockerfile",
     "settings": {
@@ -47,5 +48,5 @@
         "files.autoSave": "off"
     },
     // Actualiza el repositorio cada vez que carga vscode
-    "postAttachCommand": "sh .devcontainer/configuregit.sh && sh .devcontainer/autoupdate.sh"
+    "postAttachCommand": "sh .devcontainer/update.sh"
 }

@@ -1,6 +1,6 @@
 # Codespace para Estudiantes de la UNI
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/nica-dev/codespaces-uni?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/DeybisMelendez/codespaces-uni?quickstart=1)
 
 Este repositorio ha sido creado por **Deybis Antonio Melendez Vargas**, estudiante de la Universidad Nacional de Ingeniería (UNI), con el objetivo de proporcionar un entorno de desarrollo listo para que los estudiantes puedan realizar sus tareas de programación de manera rápida y eficiente utilizando GitHub Codespaces.
 

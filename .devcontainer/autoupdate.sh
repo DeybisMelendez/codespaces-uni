@@ -2,6 +2,7 @@
 
 # Obtener y fusionar cambios del repositorio upstream
 GIT="git --git-dir=$PWD/.git --work-tree=$PWD"
+
 $GIT fetch origin
 $GIT rebase origin
 $GIT fetch upstream

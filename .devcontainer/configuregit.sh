@@ -4,5 +4,6 @@
 SAFE_DIRECTORY="/workspaces/codespaces-uni"
 REPO="https://github.com/DeybisMelendez/codespaces-uni.git"
 
-git config --global --add safe.directory "$SAFE_DIRECTORY"
-git remote add upstream $REPO
+GIT="git --git-dir=$PWD/.git --work-tree=$PWD"
+$GIT config --global --add safe.directory "$SAFE_DIRECTORY"
+$GIT remote add upstream $REPO

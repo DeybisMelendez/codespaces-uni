@@ -26,9 +26,8 @@ else
     git remote add upstream $REPO
 fi
 
-# Configurar Git para usar fast-forward en todos los pulls
-echo "Configurando git para usar fast-forward solamente..."
-git config --global pull.ff only
+git fetch upstream
+git rebase upstream/main
 
 if [ $? -eq 0 ]; then
     echo "Configuración de git pull con fast-forward completada."

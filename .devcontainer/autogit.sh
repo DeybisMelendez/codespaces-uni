@@ -3,9 +3,6 @@
 # Define el comando git con el directorio actual
 GIT="git --git-dir=$PWD/.git --work-tree=$PWD"
 
-# Hacer pull de la rama actual
-$GIT pull
-
 # Añadir todos los cambios al área de stage
 $GIT add .
 

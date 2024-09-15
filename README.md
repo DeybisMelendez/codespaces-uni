@@ -1,6 +1,8 @@
-# Plantilla de Codespace para Estudiantes de la UNI
+# Codespace para Estudiantes de la UNI
 
-Este repositorio ha sido creado por **Deybis Melendez**, estudiante de la Universidad Nacional de Ingeniería (UNI), con el objetivo de proporcionar un entorno de desarrollo listo para que los estudiantes puedan realizar sus tareas de programación de manera rápida y eficiente utilizando GitHub Codespaces.
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/nica-dev/codespaces-uni?quickstart=1)
+
+Este repositorio ha sido creado por **Deybis Antonio Melendez Vargas**, estudiante de la Universidad Nacional de Ingeniería (UNI), con el objetivo de proporcionar un entorno de desarrollo listo para que los estudiantes puedan realizar sus tareas de programación de manera rápida y eficiente utilizando GitHub Codespaces.
 
 La idea principal detrás de esta plantilla es facilitar el trabajo en las tareas de programación que forman parte del plan de estudios, eliminando la necesidad de configuraciones complicadas. Este entorno viene pre-configurado con todo lo necesario para que los estudiantes puedan enfocarse en el código y no en los detalles técnicos de la configuración.
 
@@ -11,21 +13,29 @@ Si eres un estudiante de la UNI o de cualquier otra universidad y necesitas un e
 Esta plantilla incluye lo siguiente:
 
 - **Configuración de Codespace**: Listo para ser usado con Codespaces.
-- **Editor preconfigurado**: Visual Studio Code con extensiones recomendadas para lenguajes de programación utilizados Python y C/C++.
+- **Editor pre-configurado**: Visual Studio Code con extensiones recomendadas para lenguajes de programación utilizados Python y C/C++.
 - **Dependencias iniciales**: Instalación de dependencias comunes como Python, GCC, make, valgrind, entre otros.
 
 ## ¿Cómo empezar?
 
-### 1. Crear un Codespace
+Puede dar click en el botón "Open in Github Codespaces" o bien seguir los siguientes pasos:
 
 1. Haz clic en el botón "Code" en la esquina superior derecha de este repositorio.
-2. Selecciona "Create Codespace on main".
-3. Espera unos momentos mientras se configura tu entorno de desarrollo.
+2. Seleccione Codespaces
+3. Selecciona "Create Codespace on main".
+4. Espera unos momentos mientras se configura tu entorno de desarrollo.
 
-### 2. Entorno de Desarrollo
+## Entorno de Desarrollo
 
-El entorno está preconfigurado con:
+El entorno está pre-configurado con:
 
 - **Alpine Linux**: Distribución linux ligera, segura y eficiente.
-- **Python**: Python 3 y pip para instalación de paquetes.
-- **C/C++**: Todas las librerías necesarias para compilar,analizar y depurar código en C y C++.
+- **Python**: Python 3 y Pip para instalación de paquetes.
+- **C/C++**: Todas las librerías necesarias para compilar, analizar y depurar código en C y C++.
+
+## Actualizaciones automáticas
+
+- El codespaces está pre-configurado para actualizar su repositorio automáticamente cada vez que guarda un archivo.
+- El codespaces está pre-configurado para recibir actualizaciones automáticamente desde el repositorio original.
+
+**Nota**: Es posible que requiera hacer rebuild cuando reciba una actualización.

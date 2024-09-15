@@ -37,7 +37,10 @@
                     "cmd": "sh .devcontainer/autogit.sh"
                 }
             ]
-        }
+        },
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 3000,
+        "files.autoSaveWhenNoErrors": true
     },
     "postStartCommand": "sh .devcontainer/configuregit.sh && sh .devcontainer/autoupdate.sh"
 }

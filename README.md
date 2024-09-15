@@ -38,4 +38,4 @@ El entorno está pre-configurado con:
 - El codespaces está pre-configurado para actualizar su repositorio automáticamente cada vez que guarda un archivo.
 - El codespaces está pre-configurado para recibir actualizaciones automáticamente desde el repositorio original.
 
-**Nota**: Es posible que requiera hacer rebuild cuando reciba una actualización.
+**Nota**: Es posible que requiera hacer rebuild cuando reciba una actualización. Si tiene alguna dificultad para actualizar el repositorio puede intentar escribiendo en la terminal `sh .devcontainer/update.sh`

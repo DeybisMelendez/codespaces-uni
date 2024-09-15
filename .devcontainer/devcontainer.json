@@ -1,8 +1,13 @@
 {
     "name": "Plantilla de Codespaces para estudiantes UNI",
     "extensions": [
+        // Extensiones para python
         "donjayamanne.python-extension-pack",
+        "ms-python.isort",
+        "donjayamanne.python-environment-manager",
+        // Extensiones para C/C++
         "ms-vscode.cpptools-extension-pack",
+        // Extensiones para el editor Visual Studio Code
         "usernamehw.errorlens",
         "oderwat.indent-rainbow",
         "akamud.vscode-theme-onedark",
@@ -29,6 +34,7 @@
             "rgba(79,236,236,0.3)"
         ],
         "workbench.colorTheme": "Atom One Dark",
+        // Configuración de run on save para automatizar git
         "emeraldwalk.runonsave": {
             "commands": [
                 {
@@ -38,9 +44,8 @@
                 }
             ]
         },
-        "files.autoSave": "afterDelay",
-        "files.autoSaveDelay": 3000,
-        "files.autoSaveWhenNoErrors": true
+        "files.autoSave": "off"
     },
+    // Actualiza el repositorio cada vez que carga vscode
     "postAttachCommand": "sh .devcontainer/configuregit.sh && sh .devcontainer/autoupdate.sh"
 }

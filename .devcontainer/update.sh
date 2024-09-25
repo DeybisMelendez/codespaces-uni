@@ -15,9 +15,13 @@ if echo "$GIT_OUTPUT" | grep -q "is owned by"; then
     echo "Agregando directorio inseguro como seguro: $UNSAFE_DIR"
     $GIT config --global --add safe.directory "$UNSAFE_DIR"
 fi
-
+# Verificar si upstream ya existe, si no, agregarlo
+if ! $GIT remote | grep -q upstream; then
+    echo "Agregando remoto 'upstream': $REPO"
+    $GIT remote add upstream $REPO
+fi
 # Obtener y fusionar cambios del repositorio upstream
 $GIT fetch upstream
 COMMIT=$(date +"%Y-%m-%d %H:%M:%S")
-$GIT merge upstream/main -m "$COMMIT"
+$GIT merge upstream/main -m "$COMMIT" --allow-unrelated-histories
 $GIT push

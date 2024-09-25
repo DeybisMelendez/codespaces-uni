@@ -41,9 +41,6 @@ if ! $GIT diff --quiet; then
         echo "Push realizado con éxito"
     fi
 
-    # Registrar logs en archivo autogit.log
-    echo "[$(date +"%Y-%m-%d %H:%M:%S")] Commit y push realizados correctamente: $COMMIT_MSG" >> autogit.log
-
 else
     echo "No hay cambios para commitear"
 fi

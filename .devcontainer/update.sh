@@ -3,7 +3,6 @@ REPO="https://github.com/DeybisMelendez/codespaces-uni.git"
 GIT="git --git-dir=$PWD/.git --work-tree=$PWD"
 
 # Intenta ejecutar un comando git
-local GIT_OUTPUT
 GIT_OUTPUT=$($GIT status 2>&1)
 
 # Verificar si aparece un mensaje sobre el directorio inseguro

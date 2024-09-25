@@ -28,6 +28,8 @@
         "C_Cpp.codeAnalysis.clangTidy.enabled": true,
         "C_Cpp.default.cStandard": "c99",
         "C_Cpp.debugShortcut": false,
+        // Configuración para Java
+        "java.server.launchMode": "Standard",
         // Configuración de tema del editor
         // Indentación
         "indentRainbow.indicatorStyle": "light",

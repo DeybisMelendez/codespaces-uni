@@ -17,8 +17,6 @@ add_safe_directory_if_needed() {
         # Agregar el directorio como seguro
         echo "Agregando directorio inseguro como seguro: $UNSAFE_DIR"
         $GIT config --global --add safe.directory "$UNSAFE_DIR"
-    else
-        echo "No se detectaron problemas de directorio inseguro."
     fi
 }
 
@@ -29,8 +27,6 @@ add_safe_directory_if_needed
 if ! $GIT remote | grep -q upstream; then
     echo "Agregando remoto 'upstream': $REPO"
     $GIT remote add upstream $REPO
-else
-    echo "Remoto 'upstream' ya existe."
 fi
 
 # Fetch de cambios desde upstream
@@ -40,22 +36,21 @@ if ! $GIT fetch upstream; then
     exit 1
 fi
 
-# Verificar si hay nuevos cambios antes de hacer el merge
+# Verificar si hay nuevos cambios antes de hacer el rebase
 UPSTREAM_STATUS=$($GIT rev-list HEAD...upstream/main --count)
 if [ "$UPSTREAM_STATUS" -eq 0 ]; then
     echo "No hay cambios nuevos desde 'upstream'."
 else
-    # Merge de cambios con un mensaje automático basado en la fecha
-    COMMIT_MESSAGE="Merge con upstream: $(date +"%Y-%m-%d %H:%M:%S")"
-    echo "Fusionando cambios de 'upstream/main' con el mensaje: $COMMIT_MESSAGE"
-    if ! $GIT merge upstream/main -m "$COMMIT_MESSAGE"; then
-        echo "Error: No se pudo fusionar los cambios desde 'upstream'."
+    # Hacer rebase de cambios
+    echo "Rebasando cambios de 'upstream/main'..."
+    if ! $GIT rebase upstream/main; then
+        echo "Error: No se pudo rebase de los cambios desde 'upstream'."
         exit 1
     fi
 
-    # Hacer push de los cambios fusionados
+    # Hacer push de los cambios rebaseados
     echo "Enviando cambios al repositorio remoto..."
-    if ! $GIT push; then
+    if ! $GIT push --force; then
         echo "Error: No se pudo hacer push de los cambios."
         exit 1
     fi

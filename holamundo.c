@@ -2,10 +2,6 @@
 // sh runc.sh holamundo
 // O bien hacerlo manualmente con make:
 // make holamundo && ./holamundo && rm -f holamundo
-// Ejecutando con clang:
-// clang holamundo.c && ./a.out && rm -f a.out
-// Ejecutando con gcc:
-// gcc holamundo.c && ./a.out && rm -f a.out
 
 #include <stdio.h>
 

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # runc.sh es un script que ejecuta un código escrito en C de manera sencilla.
-# Uso: sh runc.sh directio/nombre_del_archivo_c_sin_extension
+# Uso: sh runc.sh directorio/nombre_del_archivo_c_sin_extension
 
 # Asegurarse de que el argumento $1 sea proporcionado
 if [ -z "$1" ]; then

@@ -7,6 +7,8 @@
         "donjayamanne.python-environment-manager",
         // Extensiones para C/C++
         "ms-vscode.cpptools-extension-pack",
+        // Extensiones para Java
+        "vscjava.vscode-java-pack",
         // Extensiones para el editor Visual Studio Code
         "usernamehw.errorlens",
         "oderwat.indent-rainbow",
@@ -25,7 +27,9 @@
         "C_Cpp.default.intelliSenseMode": "clang-x64",
         "C_Cpp.codeAnalysis.clangTidy.enabled": true,
         "C_Cpp.default.cStandard": "c99",
+        "C_Cpp.debugShortcut": false,
         // Configuración de tema del editor
+        // Indentación
         "indentRainbow.indicatorStyle": "light",
         "indentRainbow.lightIndicatorStyleLineWidth": 2,
         "indentRainbow.colors": [
@@ -34,7 +38,14 @@
             "rgba(255,127,255,0.3)",
             "rgba(79,236,236,0.3)"
         ],
+        // Tema del editor
         "workbench.colorTheme": "Atom One Dark",
+        // Tipografía del editor
+        "editor.fontFamily": "Fira Code, 'monospace', monospace",
+        "editor.fontLigatures": true,
+        "editor.fontWeight": "500",
+        "editor.fontSize": 14,
+        "errorLens.fontFamily": "Fira Code, 'monospace', monospace",
         // Configuración de run on save para automatizar git
         "emeraldwalk.runonsave": {
             "commands": [

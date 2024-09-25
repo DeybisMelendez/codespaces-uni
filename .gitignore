@@ -1,0 +1,97 @@
+# Archivos generales del sistema
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.swp
+*.log
+*.out
+
+# Archivos específicos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+.env/
+.venv/
+.Python
+pip-log.txt
+pytest_cache/
+.tox/
+.coverage
+*.egg-info/
+*.eggs/
+build/
+dist/
+*.egg
+
+# Archivos de virtualenv
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos específicos de Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.project
+*.classpath
+*.settings/
+target/
+bin/
+out/
+build/
+
+# Archivos específicos de C
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.dylib
+*.lib
+*.so
+*.dll
+
+# Archivos específicos de C++
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.dylib
+*.lib
+*.so
+*.dll
+*.dSYM/
+
+# Archivos específicos de Prolog
+*.qlf
+*.pl~
+
+# Archivos específicos de Lisp
+*.fasl
+*.ufsl
+*.lib
+*.x86f
+*.sparcf
+*.dfsl
+*.pfsl
+*.d64fsl
+*.dx64fsl
+*.lx64fsl
+*.lx32fsl
+*.dx32fsl
+*.dx64fsl
+
+# Archivos de IDEs y editores
+.vscode/
+*.code-workspace

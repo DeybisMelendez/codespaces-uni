@@ -16,9 +16,9 @@ Esta plantilla incluye lo siguiente:
 
 ## ¿Cómo empezar?
 
-1. De clic en el botón "Use this template" y seleccione "Create a new repository", otra opción posible es dar clic en el botón "fork", luego en "Create fork".
-2. Una vez creado un nuevo repositorio para su codespace de clic en el botón "Code" en la esquina superior derecha del repositorio donde se creó el template o fork.
-3. Seleccione Codespaces
+1. De clic en el botón "Use this template" y seleccione "Create a new repository".
+2. Una vez creado un nuevo repositorio para su codespace de clic en el botón "Code" en la esquina superior derecha del repositorio donde se creó el template.
+3. Seleccione Codespaces.
 4. Selecciona "Create Codespace on main".
 5. Espera unos minutos mientras se configura su entorno de desarrollo.
 
@@ -45,6 +45,7 @@ El entorno está pre-configurado con:
 ## Futuras implementaciones (TODO)
 
 - Configuración para desarrollo web (HTML, CSS, JS)
+- Implementación de DosBox
 
 ## Solicitar feature, arreglar bug o consulta
 

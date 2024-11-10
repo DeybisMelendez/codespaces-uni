@@ -9,6 +9,8 @@
         "ms-vscode.cpptools-extension-pack",
         // Extensiones para Java
         "vscjava.vscode-java-pack",
+        // Extensiones para Swi-Prolog
+        "arthurwang.vsc-prolog",
         // Extensiones para el editor Visual Studio Code
         "usernamehw.errorlens",
         "oderwat.indent-rainbow",

@@ -2,15 +2,15 @@
 GIT="git --git-dir=$PWD/.git --work-tree=$PWD"
 
 # Verificar si hay cambios antes de hacer git add y commit
-if ! $GIT diff --quiet; then
+if ! $GIT diff; then
     # Añadir todos los cambios al área de stage, excluyendo archivos temporales o logs
     $GIT add .
 
     # Verificar si hay algo en el área de stage después de excluir archivos no deseados
-    if $GIT diff --cached --quiet; then
-        echo "No hay cambios relevantes para commitear"
-        exit 0
-    fi
+    #if $GIT diff --cached --quiet; then
+    #    echo "No hay cambios relevantes para commitear"
+    #    exit 0
+    #fi
 
     # Obtener el archivo modificado más reciente
     LAST_MODIFIED_FILE=$($GIT diff --name-only | head -n 1)

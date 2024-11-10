@@ -7,7 +7,7 @@ apk add python3 py3-pip
 # Instalar paquetes para desarrollo en Java
 apk add openjdk21-jdk
 # Instalar Swi-Prolog
-swi-prolog
+apk add swi-prolog
 # Instalar git
 apk add git
 # Otros paquetes

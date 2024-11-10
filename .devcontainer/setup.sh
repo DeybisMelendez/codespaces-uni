@@ -1,3 +1,4 @@
+echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 # Actualizar repositorio
 apk update
 # Instalar paquetes para desarrollo en C/C++
